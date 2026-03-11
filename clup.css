@@ -1,0 +1,79 @@
+:root {
+    --primary: #1e8ccb;
+    --accent: #5bc5d1;
+    --bg: #0a1118;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body {
+    background: radial-gradient(circle at top, #163650 0%, #0a1118 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+#particlesCanvas { position: fixed; top: 0; left: 0; z-index: 0; }
+.wrapper { position: relative; z-index: 1; padding: 20px; max-width: 500px; margin: 0 auto; }
+
+/* Nav & Logo */
+/* ضبط حجم اللوجو ليكون متناسقاً */
+.logo img {
+    height: 35px; /* هذا هو الارتفاع المثالي كما في التصميم السابق */
+    width: auto;  /* يحافظ على أبعاد الصورة دون تشويه */
+    display: block;
+    object-fit: contain;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* المسافة بين أيقونة اللوجو واسم الشركة */
+}
+
+/* إذا كنت تستخدم نصاً بجانب اللوجو */
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+/* Hero */
+.hero { text-align: center; padding: 60px 0; }
+h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 20px; }
+h1 span { background: linear-gradient(to bottom, #88dae0, #1e8ccb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.tagline { color: #888; margin-bottom: 35px; }
+
+/* Buttons */
+.cta-group { display: flex; flex-direction: column; gap: 15px; }
+.btn-fill, .btn-outline { 
+    padding: 18px; border-radius: 15px; text-decoration: none; text-align: center; font-weight: 600; transition: 0.3s;
+}
+.btn-fill { background: linear-gradient(90deg, #1e4d7b, #5bc5d1); color: white; border: none; }
+.btn-outline { background: var(--glass); color: white; border: 1px solid var(--border); }
+
+/* Stats Bar */
+.stats-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 30px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: 40px 0; }
+.stat-item { font-size: 0.75rem; color: #ccc; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.stat-item i { color: var(--accent); }
+
+/* Cards & Sections */
+.content-section { text-align: center; padding: 50px 0; }
+.divider { width: 60px; height: 3px; background: linear-gradient(90deg, transparent, var(--accent), transparent); margin: 15px auto 30px; }
+.card-glass { background: var(--glass); border: 1px solid var(--border); padding: 40px 20px; border-radius: 25px; backdrop-filter: blur(10px); }
+.icon-box-gradient { width: 65px; height: 65px; background: radial-gradient(circle, rgba(91,197,209,0.2), transparent); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--accent); }
+
+/* Form */
+.audit-form { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid var(--border); text-align: left; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-size: 0.8rem; margin-bottom: 8px; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; background: rgba(0,0,0,0.3); border: 1px solid var(--border); border-radius: 10px; color: white; }
+
+/* Footer */
+.main-footer { text-align: left; padding: 50px 0 20px; border-top: 1px solid var(--border); }
+.footer-logo { font-size: 1.5rem; color: var(--accent); margin-bottom: 10px; }
+.social-links { display: flex; gap: 15px; margin: 20px 0; }
+.social-links a { width: 40px; height: 40px; background: var(--glass); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; border: 1px solid var(--border); }
+.back-to-top { position: fixed; bottom: 20px; right: 20px; width: 45px; height: 45px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
