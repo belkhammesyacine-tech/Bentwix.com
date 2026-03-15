@@ -3,93 +3,574 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bentwix | Growth Systems</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="clup.css">
+    <title>Bentwix | Premium Digital Growth Agency</title>
+    <meta name="description" content="Bentwix helps businesses scale using AI, automation, and modern digital systems. Book a discovery call today to accelerate your growth.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- Icons (Phosphor Icons - clean, modern) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <canvas id="particlesCanvas"></canvas>
-
-    <div class="wrapper">
-        <nav>
-    <div class="logo">
-        <img src="logo.png.png" alt="Bentwix Logo">
-        <div class="logo-text">Bentwix</div>
+ <body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
 
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-</nav>
-
-        <header class="hero">
-            <h1>We Install Growth Systems That <span>Transform Attention into Customers</span> — Predictably.</h1>
-            <p class="tagline">Brand strategy. Systems. Media. Automation. Sales.</p>
-            <div class="cta-group">
-                <a href="#audit" class="btn-fill">Get Free System Audit</a>
-                <a href="#systems" class="btn-outline">Book Strategy Call</a>
+    <nav class="navbar">
+    </nav>
+    <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
+    <div class="stars-container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+</div>
+    
+    <!-- Navigation -->
+   <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+ <a href="index.html" class="logo" style="text-decoration: none; font-weight: 800; font-size: 1.8rem; color: white; letter-spacing: -0.5px;">
+    Bentwix<span style="color: #0072ff;">.</span>
+</a>
+            <ul class="nav-links">
+                <li><a href="#audit">Free Audit</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+            <div class="nav-actions">
+               <a href="" 
+   onclick="Calendly.initPopupWidget({url: 'https://calendly.com/belkhammesyacine/30min'});return false;" 
+   class="book-call-btn">
+   BOOK CALL
+</a>
+                <button class="mobile-toggle" aria-label="Toggle Navigation">
+                    <i class="ph ph-list"></i>
+                </button>
             </div>
-        </header>
-
-        <section class="stats-bar">
-            <div class="stat-item"><i class="far fa-dot-circle"></i> SYSTEMS</div>
-            <div class="stat-item"><i class="fas fa-arrow-trend-up"></i> GROWTH</div>
-            <div class="stat-item"><i class="fas fa-bolt"></i> AUTOMATION</div>
-            <div class="stat-item"><i class="fas fa-chart-bar"></i> SCALE</div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container text-center">
+                <div class="hero-content">
+                    <span class="badge">Next-Gen Digital Agency</span>
+                    <h1 class="hero-title">Scale Your Business With <span class="accent">Technology & Automation</span></h1>
+                    <p class="hero-subtitle">We help ambitious companies accelerate growth using AI, modern digital systems, and data-driven marketing.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Book a Free Strategy Call <i class="ph-bold ph-arrow-right"></i></a>
+                        <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about"><i class="ph ph-caret-down"></i></a>
+            </div>
         </section>
 
-        <section id="systems" class="content-section">
-            <h2>Our<br><span>Growth Systems</span></h2>
-            <div class="divider"></div>
-            <div class="card-glass">
-                <div class="icon-box-gradient"><i class="fas fa-palette"></i></div>
-                <h3>Graphic Design Engines</h3>
-                <p>Brand identity + content system that scales with your vision.</p>
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container about-container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="section-badge">About Bentwix</div>
+                        <h2 class="section-title">Architecting Digital <br>Systems for <span class="accent">Growth.</span></h2>
+                        <p>We are a premium digital growth agency obsessed with ROI, modern infrastructure, and automation. We don't just build websites; we build intelligent business systems designed to scale.</p>
+                        <p>Our mission is to help small and medium businesses, startups, and course creators transition from chaotic manual processes to sleek, automated, and high-converting digital environments.</p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <h3 class="stat-number accent">10x</h3>
+                                <p class="stat-label">Automation ROI</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number accent">24/7</h3>
+                                <p class="stat-label">Digital Presence</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="glass-card main-card">
+                            <div class="card-header">
+                                <div class="dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="card-title">System Architecture</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="pulse-line"></div>
+                                <div class="pulse-line w-70"></div>
+                                <div class="pulse-line w-50"></div>
+                                <div class="node-network">
+                                    <div class="node central"><i class="ph-fill ph-lightning"></i></div>
+                                    <div class="node peripheral p1"><i class="ph-bold ph-robot"></i></div>
+                                    <div class="node peripheral p2"><i class="ph-bold ph-chart-line-up"></i></div>
+                                    <div class="node peripheral p3"><i class="ph-bold ph-users"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-       <section id="audit" class="content-section">
-    <h2 class="main-title">Free <span>System Audit</span></h2>
-    <div class="gradient-line"></div>
-    <p class="section-desc">Tell us about your business. We'll show you where the gaps are.</p>
+        </section>
 
-    <form class="audit-form" action="https://formspree.io/f/belkhammesyacine@gmail.com" method="POST">
-        <div class="input-group">
-            <label>Full Name *</label>
-            <input type="text" name="name" placeholder="John Doe" required>
+        <!-- Services Section -->
+       <section class="services section-padding" id="services">
+    <div class="container services-container">
+        <div class="text-center" style="margin-bottom: var(--space-xl);">
+            <div class="section-badge">Our Expertise</div>
+            <h2 class="section-title">Digital Systems That <br><span class="accent">Drive Revenue.</span></h2>
+            <p style="max-width: 600px; margin: 0 auto;">We don't sell disconnected services. We build integrated growth engines.</p>
         </div>
-        <div class="input-group">
-            <label>Email *</label>
-            <input type="email" name="email" placeholder="john@company.com" required>
+
+        <div class="services-grid">
+            <div class="service-card glass-card">
+                <div class="service-header">
+                    <div class="service-icon"><i class="ph-fill ph-bezier-curve"></i></div>
+                    <h3>Graphic Design</h3>
+                </div>
+                <p>Elevate your brand with premium visuals that capture attention and build trust.</p>
+                <ul class="service-features">
+                    <li><i class="ph-bold ph-check"></i> Branding & Identity</li>
+                    <li><i class="ph-bold ph-check"></i> Social Media Design</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass-card highlight-card">
+                <div class="service-header">
+                    <div class="service-icon"><i class="ph-fill ph-code"></i></div>
+                    <h3>Web Development</h3>
+                </div>
+                <p>High-performance, modern websites engineered for conversion and speed.</p>
+                <ul class="service-features">
+                    <li><i class="ph-bold ph-check"></i> Modern responsive websites</li>
+                    <li><i class="ph-bold ph-check"></i> Landing pages</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass-card">
+                <div class="service-header">
+                    <div class="service-icon"><i class="ph-fill ph-database"></i></div>
+                    <h3>CRM Development</h3>
+                </div>
+                <p>Centralize your data and automate your sales pipeline completely.</p>
+                <ul class="service-features">
+                    <li><i class="ph-bold ph-check"></i> Custom CRM systems</li>
+                    <li><i class="ph-bold ph-check"></i> Lead management</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass-card">
+                <div class="service-header">
+                    <div class="service-icon"><i class="ph-fill ph-robot"></i></div>
+                    <h3>AI Agents</h3>
+                </div>
+                <p>Deploy intelligent agents to handle support and save hours.</p>
+                <ul class="service-features">
+                    <li><i class="ph-bold ph-check"></i> AI chatbots</li>
+                    <li><i class="ph-bold ph-check"></i> Automation systems</li>
+                </ul>
+            </div>
+
+            <div class="service-card glass-card">
+                <div class="service-header">
+                    <div class="service-icon"><i class="ph-fill ph-megaphone"></i></div>
+                    <h3>Media Buying</h3>
+                </div>
+                <p>Data-driven ad campaigns designed for positive return on spend.</p>
+                <ul class="service-features">
+                    <li><i class="ph-bold ph-check"></i> Facebook & Instagram Ads</li>
+                    <li><i class="ph-bold ph-check"></i> Lead generation</li>
+                </ul>
+            </div>
         </div>
-        <div class="input-group">
-            <label>Biggest Bottleneck *</label>
-            <textarea name="message" placeholder="What's holding you back from scaling?" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Get My Audit <i class="fas fa-paper-plane"></i></button>
-    </form>
+    </div>
 </section>
 
-        <footer class="main-footer">
-            <div class="footer-logo">Bentwix</div>
-            <p>Growth systems that transform attention into customers — predictably.</p>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> belkhammesyacine@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +213 (07) 75-16-63-31</p>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                 <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Bentwix. All rights reserved.</p>
-            </div>
-        </footer>
+        <!-- Process Section -->
+       <section id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span class="accent">Expertise</span></h2>
+            <p>We build systems that scale your business automatically.</p>
+        </div>
 
-        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="ph-fill ph-chart-line-up"></i>
+                <h3>Revenue Growth</h3>
+                <p>Strategies designed to increase your monthly recurring revenue through data-driven systems.</p>
+            </div>
+
+            <div class="service-card active"> <i class="ph-fill ph-cpu"></i>
+                <h3>AI Automations</h3>
+                <p>Custom AI workflows that handle your repetitive tasks while you focus on scaling.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="ph-fill ph-megaphone"></i>
+                <h3>Lead Generation</h3>
+                <p>Predictable systems to flood your pipeline with high-quality, ready-to-buy prospects.</p>
+            </div>
+        </div>
     </div>
+</section>
+      
+<section id="process">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <h2>Our <span class="accent">Process</span></h2>
+            <p>How we transform your business step by step.</p>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-card">
+                <div class="step-number">01</div>
+                <h3>Discovery</h3>
+                <p>We analyze your business needs and identify growth opportunities.</p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">02</div>
+                <h3>Strategy</h3>
+                <p>We create a custom AI-driven plan tailored to your specific goals.</p>
+            </div>
+
+            <div class="process-card">
+                <div class="step-number">03</div>
+                <h3>Execution</h3>
+                <p>We implement the solutions and optimize for the best results.</p>
+            </div>
+        </div>
+    </div>
+</section>>
+
+<section id="work" class="section-padding">
+    <div class="container work-container">
+        <div class="text-center" style="margin-bottom: 50px;">
+            <div class="section-badge">Case Studies</div>
+            <h2 class="section-title">Success <span class="accent">Stories</span></h2>
+            <p style="max-width: 600px; margin: 0 auto; opacity: 0.8;">Integrated systems we've built to drive real business growth.</p>
+        </div>
+
+        <div class="work-grid">
+            <div class="project-card glass-card">
+                <div class="project-icon-box">
+                    <i class="ph-fill ph-brain"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-badge-small">AI & Automation</div>
+                    <h3>Nexus Real Estate AI</h3>
+                    <p>Built an autonomous AI system that qualifies leads and books meetings automatically.</p>
+                    <div class="project-tech">
+                        <span>Python</span> <span>OpenAI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card highlight-card">
+                <div class="project-icon-box">
+                    <i class="ph-fill ph-shopping-cart-simple"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-badge-small">Web Development</div>
+                    <h3>Vortex E-commerce</h3>
+                    <p>High-performance headless commerce platform with ultra-fast load times.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span> <span>Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="project-icon-box">
+                    <i class="ph-fill ph-chart-bar"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-badge-small">Custom Systems</div>
+                    <h3>Logistics CRM</h3>
+                    <p>Custom CRM system automating warehouse inventory and global shipments.</p>
+                    <div class="project-tech">
+                        <span>Dashboard</span> <span>API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="audit">
+    <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+            <h2>Get Your Free <span class="accent">AI Audit</span></h2>
+            <p>Ready to scale? Fill out the form below and we'll be in touch.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xqeyqqga" method="POST" class="audit-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="yacine belkhammes" required>
+                </div>
+                <div class="input-group">
+                    <label>your email </label>
+                    <input type="email" name="email" placeholder="yacine@example.com" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Website URL</label>
+                    <input type="url" name="website" placeholder="https://yourbrand.com">
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="+213 (00) 000-0000" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>How can we help?</label>
+                <textarea name="message" placeholder="Tell us about your project goals..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send My Request</button>
+        </form>
+    </div>
+</section>
+ 
+    <!-- Strategy Call Modal -->
+    <div class="modal-overlay" id="strategyModal">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="closeModalBtn" aria-label="Close Modal"><i class="ph ph-x"></i></button>
+            
+            <div class="modal-content" id="modalFormContent">
+                <div class="modal-header">
+                    <h2 class="modal-title">Book Your Free <span class="accent">Strategy Call</span></h2>
+                    <p class="modal-subtitle">Answer a few quick questions so we can understand your business and see how Bentwix can help you grow.</p>
+                </div>
+                
+                <form id="strategyForm" class="booking-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="yacine belkhammes">
+                        </div>
+                        <div class="form-group">
+                            <label for="businessName">Business Name</label>
+                            <input type="text" id="businessName" name="businessName" required placeholder="Acme Corp">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="yacine@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (WhatsApp preferred)</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+213 7 56 89 00 00">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mt-3">
+                        <label for="businessType">What type of business do you run?</label>
+                        <select id="businessType" name="businessType" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="local">Local Business</option>
+                            <option value="personal_brand">Personal Brand</option>
+                            <option value="startup">Startup</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label>What service are you interested in?</label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Web Dev"> <span>Website Development</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="CRM"> <span>CRM Development</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="AI"> <span>AI Automation / AI Agents</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Design"> <span>Graphic Design / Branding</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Ads"> <span>Paid Advertising</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="services" value="Multiple"> <span>Multiple Services</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="problem">What is your biggest problem right now in your business?</label>
+                        <textarea id="problem" name="problem" rows="3" required placeholder="Briefly describe your current challenges..."></textarea>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label>Monthly Marketing Budget</label>
+                        <div class="radio-grid">
+                            <label class="radio-label"><input type="radio" name="budget" value="<500" required> <span>Less than $500</span></label>
+                            <label class="radio-label"><input type="radio" name="budget" value="500-2000"> <span>$500 – $2000</span></label>
+                            <label class="radio-label"><input type="radio" name="budget" value="2000-5000"> <span>$2000 – $5000</span></label>
+                            <label class="radio-label"><input type="radio" name="budget" value="5000+"> <span>$5000+</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label>When do you want to start?</label>
+                        <div class="radio-grid">
+                            <label class="radio-label"><input type="radio" name="timeline" value="immediate" required> <span>Immediately</span></label>
+                            <label class="radio-label"><input type="radio" name="timeline" value="1month"> <span>Within 1 month</span></label>
+                            <label class="radio-label"><input type="radio" name="timeline" value="exploring"> <span>Just exploring</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-action mt-4">
+                        <button type="submit" class="btn btn-primary btn-full">Submit & Schedule My Call</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-success hidden" id="modalSuccessContent">
+                <div class="success-icon"><i class="ph-fill ph-check-circle"></i></div>
+                <h2 class="modal-title">Request Received.</h2>
+                <p class="modal-subtitle">Thank you! Your request has been received. You can now schedule your strategy call below.</p>
+                <div class="calendar-embed-mock">
+                    <p>Calendar Booking System Placeholder</p>
+                    <span>(Embed Calendly or similar widget here)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="main.js"></script>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-info">
+                <h2 class="logo">Bentwix<span class="accent">.</span></h2>
+                <p>Growth systems that transform attention into customers.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <a href="mailto:hello@bentwix.com">hello@bentwix.com</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons-wrapper">
+                    <a href="https://wa.me/213552662528?text=Hello%20Bentwix%2C%20I%20am%20interested%20in%20your%20services" target="_blank" class="glass-icon">
+                        <div class="glass-effect"></div>
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                    </a>
+                    <a href="https://twitter.com/YOUR_USERNAME" target="_blank" class="glass-icon">
+                        <div class="glass-effect"></div>
+                        <i class="ph-fill ph-twitter-logo"></i>
+                    </a>
+                    <a href="https://instagram.com/bent.wix" target="_blank" class="glass-icon">
+                        <div class="glass-effect"></div>
+                        <i class="ph-fill ph-instagram-logo"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+    </div>
+   <script>
+    const form = document.querySelector('.audit-form');
     
-    <script src="clupe.JS"></script>
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault(); // منع الصفحة من إعادة التحميل
+        
+        const status = document.createElement('div'); // إنشاء مساحة لرسالة الحالة
+        status.style.marginTop = '20px';
+        status.style.padding = '15px';
+        status.style.borderRadius = '10px';
+        status.style.textAlign = 'center';
+        status.style.fontWeight = 'bold';
+        
+        const data = new FormData(e.target);
+        
+        try {
+            const response = await fetch(e.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // في حالة النجاح
+                status.style.background = 'rgba(0, 255, 100, 0.1)';
+                status.style.color = '#00ff64';
+                status.style.border = '1px solid #00ff64';
+                status.innerText = "Thanks! Your request has been sent successfully. Check your Gmail soon.";
+                form.reset(); // تنظيف الحقول
+            } else {
+                // في حالة وجود خطأ من السيرفر
+                throw new Error();
+            }
+        } catch (error) {
+            // في حالة فشل الاتصال بالإنترنت أو خطأ تقني
+            status.style.background = 'rgba(255, 0, 0, 0.1)';
+            status.style.color = '#ff4b4b';
+            status.style.border = '1px solid #ff4b4b';
+            status.innerText = "Oops! There was a problem. Please try again or contact us via WhatsApp.";
+        }
+        
+        form.appendChild(status); // إظهار الرسالة أسفل الزر
+        
+        // إخفاء الرسالة بعد 5 ثوانٍ
+        setTimeout(() => status.remove(), 5000);
+    });
+</script>
+<script>
+    let lastScrollY = window.scrollY;
+    const nav = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+            // ننزلق للأسفل -> اختفاء
+            nav.classList.add('navbar-hidden');
+        } else {
+            // نصعد للأعلى -> ظهور
+            nav.classList.remove('navbar-hidden');
+        }
+        lastScrollY = window.scrollY;
+    });
+</script>
+<script>
+    const btn = document.querySelector('.mobile-toggle');
+    const menu = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+
+    if (btn && menu) {
+        // فتح وإغلاق القائمة عند الضغط على الزر
+        btn.onclick = function() {
+            menu.classList.toggle('active');
+            btn.querySelector('i').classList.toggle('ph-list');
+            btn.querySelector('i').classList.toggle('ph-x');
+        };
+
+        // إغلاق القائمة تلقائياً عند الضغط على أي رابط
+        links.forEach(link => {
+            link.onclick = function() {
+                menu.classList.remove('active');
+                btn.querySelector('i').classList.add('ph-list');
+                btn.querySelector('i').classList.remove('ph-x');
+            };
+        });
+    }
+</script>
 </body>
-</html>
